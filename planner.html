@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Academic Planner</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar">
+            <h2 class="logo">Ajisafe Christianah</h2>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="planner.html">Academic Planner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+            <button id="themeToggle">Light Mode</button>
+        </nav>
+
+        <main class="planner-section">
+            <h1>My Academic Planner</h1>
+            <p>This is where i keep track of my classes,assignments and study plans. 
+                It helps me organised and manage my schoolwork alongside my daily activities</p>
+
+                <div class="planner-container">
+
+    <div class="planner-card">
+        <h2>My Class Schedule</h2>
+        <p>My weekly classes and the times I need to be available for them.</p>
+        <div class="planner-card">
+    <h2>My Class Schedule</h2>
+    <p>My weekly classes and the times I need to be available for them.</p>
+
+    <table class="schedule-table">
+        <tr>
+            <th>day</th>
+            <th>Course</th>
+            <th>Time</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>COS102,PHY102</td>
+            <td>10AM</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>COS106,PHY108</td>
+            <td>2PM</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>GST112,COS111</td>
+            <td>12PM-4PM</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>GST122</td>
+            <td>4PM</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>MTH102</td>
+            <td>3PM</td>
+        </tr>
+    </table>
+</div>
+    </div>
+
+    <div class="planner-card">
+    <h2>My Assignments</h2>
+    <p>Here I keep track of my assignments and when they are due.</p>
+
+    <div class="assignment-item">
+        <h3>Assignment Title</h3>
+        <p>Course: ---------</p>
+        <p>Deadline: -------</p>
+        <span>Pending</span>
+    </div>
+
+    <div class="assignment-item">
+        <h3>Assignment Title</h3>
+        <p>Course: --------</p>
+        <p>Deadline: -------</p>
+        <span>Pending</span>
+    </div>
+</div>
+
+    <div class="planner-card">
+        <p id="goalProgress">0 of 4 goals completed</p>
+        <div class="progress-bar">
+    <div class="progress-fill" id="progressFill"></div>
+</div>
+    <h2>My Study Goals</h2>
+    <p>These are some of the things I want to work on as I continue my studies.</p>
+
+    <div class="study-goal">
+        <input type="checkbox" id="goal1">
+        <label for="goal1">Complete my weekly assignments</label>
+    </div>
+
+    <div class="study-goal">
+        <input type="checkbox" id="goal2">
+        <label for="goal2">Practise my programming skills</label>
+    </div>
+
+    <div class="study-goal">
+        <input type="checkbox" id="goal3">
+        <label for="goal3">Revise my course materials</label>
+    </div>
+
+    <div class="study-goal">
+        <input type="checkbox" id="goal4">
+        <label for="goal4">Prepare for upcoming exams</label>
+    </div>
+    <h3>Add a New Task</h3>
+
+    <div class="task-input">
+        <input type="text" id="newTaskInput"
+               placeholder="Enter a new task">
+
+        <button type="button" id="addTaskBtn">
+            Add Task
+        </button>
+    </div>
+
+    <div id="taskList"></div>
+</div>
+
+</div>
+        </main>
+<script src="js/script.js"></script>
+</body>
+</html>
